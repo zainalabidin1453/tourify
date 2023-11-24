@@ -23,14 +23,19 @@
 ```json
 {
   "error": false,
-  "message": "Login successful"
+  "message": "Login successful",
+  "data": {
+    "usersId": 1,
+    "email": "jhonson@example.com"
+  }
 }
 ```
 **Catatan:** Respon JSON diatas adalah hasil respon ketika user melakukan login dan kata sandi benar atau sesuai (nilai yang di Post adalah e.email, e.password)
 ```json
 {
   "error": true,
-  "message": "Login failed"
+  "message": "Login failed",
+  "data": null
 }
 ```
 **Catatan:** Respon JSON diatas adalah hasil respon ketika user melakukan login dan kata sandi salah atau tidak sesuai (nilai yang di Post adalah e.email, e.password)
@@ -55,7 +60,11 @@
 ```json
 {
   "error": false,
-  "message": "Login successful"
+  "message": "Login successful",
+  "data": {
+    "usersId": 1,
+    "email": "jhonson@example.com"
+  }
 }
 ```
 **Catatan:** Respon JSON diatas adalah hasil respon ketika user melakukan membuat password baru, login dan kata sandi benar atau sesuai (nilai yang di Post adalah e.email, e.password)
@@ -63,6 +72,7 @@
 {
   "error": true,
   "message": "Error in the system",
+  "data": null
 }
 ```
 **Catatan:** Respon JSON diatas adalah hasil respon ketika user melakukan login dan system mengalami error
