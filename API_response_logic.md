@@ -6,21 +6,15 @@
 {
   "error": false,
   "message": "Email already exists",
-  "data": {
-    "email": "jhonson@example.com",
-    "codeVerif": 123456
-  }
+  "codeVerif": 123456
 }
 ```
 **Catatan:** Respon JSON diatas adalah hasil respon ketika user melakukan login dan email sudah terdaftar (nilai yang di Post adalah e.email)
 ```json
 {
   "error": true,
-  "message": "Email added successfully"
-  "data": {
-    "email": "jhonson@example.com",
-    "codeVerif": 123456
-  }
+  "message": "Email added successfully",
+  "codeVerif": 123456
 }
 ```
 **Catatan:** Respon JSON diatas adalah hasil respon ketika user melakukan login dan email belum terdaftar (nilai yang di Post adalah e.email)
@@ -29,24 +23,14 @@
 ```json
 {
   "error": false,
-  "message": "Login successful",
-  "data": {
-    "usersId": 1,
-    "name": "Jhonson",
-    "email": "jhonson@example.com"
-  }
+  "message": "Login successful"
 }
 ```
 **Catatan:** Respon JSON diatas adalah hasil respon ketika user melakukan login dan kata sandi benar atau sesuai (nilai yang di Post adalah e.email, e.password)
 ```json
 {
   "error": true,
-  "message": "Login failed",
-  "data": {
-    "usersId": 0,
-    "name": null,
-    "email": "jhonson@example.com"
-  }
+  "message": "Login failed"
 }
 ```
 **Catatan:** Respon JSON diatas adalah hasil respon ketika user melakukan login dan kata sandi salah atau tidak sesuai (nilai yang di Post adalah e.email, e.password)
@@ -71,20 +55,14 @@
 ```json
 {
   "error": false,
-  "message": "Login successful",
-  "data": {
-    "usersId": 1,
-    "name": "Jhonson",
-    "email": "jhonson@example.com"
-  }
+  "message": "Login successful"
 }
 ```
-**Catatan:** Respon JSON diatas adalah hasil respon ketika user melakukan login dan kata sandi benar atau sesuai (nilai yang di Post adalah e.email, e.password)
+**Catatan:** Respon JSON diatas adalah hasil respon ketika user melakukan membuat password baru, login dan kata sandi benar atau sesuai (nilai yang di Post adalah e.email, e.password)
 ```json
 {
   "error": true,
   "message": "Error in the system",
-  "data": null
 }
 ```
 **Catatan:** Respon JSON diatas adalah hasil respon ketika user melakukan login dan system mengalami error
@@ -94,10 +72,7 @@
 {
   "error": false,
   "message": "Success",
-  "data": {
-    "email": "jhonson@example.com",
-    "codeVerif": 123456
-  }
+  "codeVerif": 123456
 }
 ```
 **Catatan:** Respon JSON diatas adalah hasil respon ketika user melakukan reset password (nilai yang di Post adalah e.email)
@@ -105,7 +80,7 @@
 {
   "error": true,
   "message": "Error in the system",
-  "data": null
+  "codeVerif": null
 }
 ```
 **Catatan:** Respon JSON diatas adalah hasil respon ketika user melakukan reset password dan system mengalami error
@@ -130,7 +105,7 @@
       "totalCulinary": "",
       "openOn": "",
       "closedOn": "",
-      "ticketPrice": "Rp7000,-",
+      "ticketPrice": 7000,
       "caption": "",
       "photo": "",
       "lat": "",
@@ -140,7 +115,7 @@
           "id": 1,
           "nama": "Sarah",
           "email": "sarah@example.com",
-          "servicePrice": "Rp9000,-",
+          "servicePrice": 9000,
           "photoProfile": "",
           "totalReview": ""
         },
@@ -148,7 +123,7 @@
           "id": 2,
           "nama": "Ratih",
           "email": "ratih@example.com",
-          "servicePrice": "Rp7000,-",
+          "servicePrice": 7000,
           "photoProfile": "",
           "totalReview": ""
         }
@@ -166,7 +141,7 @@
       "totalCulinary": "",
       "openOn": "",
       "closedOn": "",
-      "ticketPrice": "Rp8000,-",
+      "ticketPrice": 8000,
       "caption": "",
       "photo": "",
       "lat": "",
@@ -176,7 +151,7 @@
           "id": 1,
           "nama": "Sarah",
           "email": "sarah@example.com",
-          "servicePrice": "Rp9000,-",
+          "servicePrice": 9000,
           "photoProfile": "",
           "totalReview": ""
         },
@@ -184,7 +159,7 @@
           "id": 2,
           "nama": "Ratih",
           "email": "ratih@example.com",
-          "servicePrice": "Rp7000,-",
+          "servicePrice": 7000,
           "photoProfile": "",
           "totalReview": ""
         }
@@ -302,7 +277,6 @@
 {
   "error": false,
   "message": "Success",
-  "province": "Sumatra Barat",
   "data": [
     {
       "id": 1,
@@ -312,15 +286,7 @@
       "province": "",
       "country": "",
       "caption": "",
-      "photo": "",
-      "nearestCulinary": [
-        {
-          "name": "3,5 Km dari Pusat Kota"
-        },
-        {
-          "name": "4,1 Km dari Pantai Padang"
-        }
-      ]
+      "photo": ""
     },
     {
       "id": 2,
@@ -330,15 +296,7 @@
       "province": "",
       "country": "",
       "caption": "",
-      "photo": "",
-      "nearestCulinary": [
-        {
-          "name": "6,1 Km dari Balai Kota"
-        },
-        {
-          "name": "4,1 Km dari Ramayana"
-        }
-      ]
+      "photo": ""
     }
   ]
 }
@@ -348,7 +306,6 @@
 {
   "error": true,
   "message": "Error in the system",
-  "province": null,
   "data": null
 }
 ```
@@ -458,26 +415,6 @@
       "noWhatsapp": "",
       "statusAccount": 0,
       "isVerification": false
-  },
-  "payment": {
-      "noRekening": "",
-      "nameBank": "",
-      "kcp": "",
-      "nameEwallet": "",
-      "noEwallet": ""
-  },
-  "profileTourguide": {
-      "noTelegram": "",
-      "usernameInstagram": "",
-      "usernameFacebook": "",
-      "usernameTiktok": "",
-      "servicesFee": 9000,
-      "spesialisasiWisata": "pantai,danau,sejarah",
-      "lastEducation": "",
-      "workExperience": "",
-      "languageSkill": "Indonesia, English",
-      "emergencyContact": "",
-      "serviceAvailability": true
   }
 }
 ```
@@ -487,8 +424,6 @@
   "error": true,
   "message": "Error in the system",
   "profileUser": null,
-  "payment": null,
-  "profileTourguide": null
 }
 ```
 **Catatan:** Respon JSON diatas adalah hasil respon ketika melakukan get my profile dan gagal atau system mengalami error
@@ -543,22 +478,6 @@
 ```
 **Catatan:** Respon JSON diatas adalah hasil respon ketika melakukan post add pembayaran dan gagal
 
-### Register Tourguide
-```json
-{
-  "error": false,
-  "message": "Registration successful",
-}
-```
-**Catatan:** Respon JSON diatas adalah hasil respon ketika melakukan post register tourguide dan berhasil (nilai yang di post adalah e.usersId, e.email, e.photoKtp, e.photoKtpFace, e.nameKtp, e.dateBirthKtp, e.genderKtp, e.addressKtp, e.addressDomisili, e.citizenship, e.lastEducation, e.fileCertification, e.workExperience, e.languageSkill, e.emergencyContact, e.noKtp, e.fileStatement, e.fileOtherSupporters, e.notes)
-```json
-{
-  "error": false,
-  "message": "Registration failed",
-}
-```
-**Catatan:** Respon JSON diatas adalah hasil respon ketika melakukan post register tourguide dan gagal
-
 
 ## Scan Objek Area  doPost(e)
 ### Scan Objek
@@ -566,7 +485,6 @@
 {
   "error": false,
   "message": "Success",
-  "isObjectFound": true,
   "data": {
     "name" : "",
     "type" : "",
@@ -580,7 +498,6 @@
 {
   "error": false,
   "message": "Success",
-  "isObjectFound": false,
   "data": null
 }
 ```
@@ -589,7 +506,6 @@
 {
   "error": true,
   "message": "Error in the system",
-  "isObjectFound": false,
   "data": null
 }
 ```
