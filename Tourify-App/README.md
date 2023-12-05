@@ -7,7 +7,7 @@ Tourify's core innovation is cutting-edge AI technology, which allows users to e
 Our research shows there is significant demand for online tour guide services, and their AI-based photo analysis features are invaluable. We aim to serve explorers looking for a more in-depth travel experience and local guides who crave a digital platform to promote their services.
 With Tourify, we didn't just build a travel app. We formed a global community of travelers and guides, all united in their passion for exploration and discovery. Embrace the future of travel with Tourify, where adventure knows no boundaries.
 
-#### 2. Project Aplikasi
+#### 2. Application Project
 This application project can be accessed via this link https://bit.ly/486qPJr.
 
 #### 2. Desain UI
